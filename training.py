@@ -144,5 +144,5 @@ filename = 'prediction_model.sav'
 pickle.dump(log_reg, open(filename, 'wb'))
 pickle.dump(scaler, open('scaling_data.sav', 'wb'))
 
-pd.DataFrame(y_pred_prob).to_csv("y_prediction_probabilities.csv")
+# pd.DataFrame(y_pred_prob).to_csv("y_prediction_probabilities.csv")
 
