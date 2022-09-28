@@ -63,7 +63,7 @@ def preprocessing_testset(df_main):
     
     X_test_scaled = scaler.transform(df_main)
 
-    return df_main
+    return X_test_scaled
     
 X_test = preprocessing_testset(df_test)
 y_pred = loaded_model.predict_proba(X_test)[:,1]
